@@ -1,0 +1,105 @@
+/*
+--------------------------------------------------------* 
+
+    Author       :  Maria Caroline
+
+--------------------------------------------------------
+
+
+/*-----------------------------------
+   1 ) Font Import From Google Fonts
+  -----------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,500);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/*----------------------
+   2 ) Preloader Styles
+  ----------------------*/
+
+
+
+
+/* ( c ) Navigation Menu */
+
+.menu {
+    float: left;
+    padding: 0;
+    position: relative;
+    background: #000;
+}
+
+.menu > div {
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu > div > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: -webkit-transform 1s linear;
+    transition: -webkit-transform 1s linear;
+    transition: transform 1s linear;
+    -webkit-transition: -webkit-transform 1s linear, -webkit-transform 1s linear;
+    transition: transform 1s linear, -webkit-transform 1s linear;
+}
+
+.menu > div:hover > img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.heading {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.heading i {
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    display: block;
+    font-size: 25px;
+    height: 60px;
+    line-height: 60px;
+    margin: auto auto 10px;
+    text-align: center;
+    /*box-shadow: 0 0 0 0 rgba(256, 256, 256, 0.2);*/
+    width: 60px;
+    -webkir-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.menu > div:hover .heading i {
+    box-shadow: 0 0 0 50px rgba(256, 256, 256, 0);
+}
+
+.menu > div h2 {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+    /*opacity: 0.8;*/
+    letter-spacing: 1px;
+}
+
+.menu > div h2 span {
+    color: #00B796;
+}
+
+
